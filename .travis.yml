@@ -1,0 +1,25 @@
+language: python
+
+branches:
+  only:
+    - master
+
+python:
+  - "2.7"
+  - "3.6"
+
+before_install:
+  - pip install -U pip
+
+install:
+  - pip install pytest codecov
+  - pip install -e .[test]
+
+script:
+  - coverage run --source=dahiti -m pytest -v
+
+after_success:
+  - codecov
+
+notifications:
+  email: false
