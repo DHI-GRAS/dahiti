@@ -15,3 +15,8 @@ def dahiti_credentials():
             'DAHITI credentials must be defined as environment variables: {}'
             .format(envvars))
     return credentials
+
+
+@pytest.fixture
+def small_query():
+    return dict(basin='Amazon')

@@ -72,7 +72,8 @@ def results_to_dataframe(results):
     """
     import pandas as pd
     df = pd.DataFrame(results).set_index('id')
-    df[COORDS] = pd.to_numeric(df[COORDS])
+    for name in COORDS:
+        df[name] = pd.to_numeric(df[name])
     return df
 
 
