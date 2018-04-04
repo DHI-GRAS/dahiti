@@ -13,6 +13,7 @@ before_install:
 
 install:
   - pip install pytest codecov
+  - pip install -r requirements_full.txt
   - pip install -e .[test]
 
 script:
