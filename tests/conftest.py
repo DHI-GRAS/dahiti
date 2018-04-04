@@ -19,4 +19,4 @@ def dahiti_credentials():
 
 @pytest.fixture
 def small_query():
-    return dict(basin='Amazon')
+    return dict(basin='Volta')
