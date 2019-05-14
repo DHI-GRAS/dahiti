@@ -1,6 +1,6 @@
 import requests
 
-API_URL = 'http://dahiti.dgfi.tum.de/api/v1/'
+API_URL = 'https://dahiti.dgfi.tum.de/api/v1/'
 COORDS = ['longitude', 'latitude']
 
 
